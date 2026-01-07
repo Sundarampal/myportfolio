@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f3f4f6;
+            font-family: "Segoe UI", Arial, sans-serif;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .topline {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 22px;
+        }
+
+        .label {
+            font-weight: 600;
+            color: black;
+            background: #ede7f6;
+            padding: 8px 15px;
+            border-radius: 8px;
+            width: 40%;
+        }
+
+        .value {
+            color: black;
+            font-weight: 600;
+            background: #e8f5e9;
+            padding: 8px 15px;
+            border-radius: 8px;
+            width: 40%;
+            text-align: right;
+        }
+
+        .center-img {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .center-img img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .toplines img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .im {
+            width: 320px;
+            height: 380px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            padding: 20px;
+        }
+
+        .im:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 10px 0px 10px 0px;
+
+        }
+
+        .back {
+            background-color: aqua;
+            border-radius: 10px 0px 10px 0px;
+        }
+
+        .back:hover {
+            background-color: red;
+        }
+
+        .t {
+
+            background-color: aquamarine;
+            border-radius: 50px;
+
+        }
+
+        @keyframes fadeAnimation {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .fading {
+            border-radius: 30px;
+            color: red;
+            animation: fadeAnimation 2s infinite;
+            margin-top: 10px;
+            margin-bottom: 1px;
+
+        }
+
+        .two {
+            background-color: aquamarine;
+            border-radius: 20px 0px 20px 0px;
+        }
+
+     
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="toplines">
+            <img src="pic/prince.jpg" alt="Logo">
+        </div>
+
+        <div class="topline">Sundram Pal</div>
+
+        <div class="row">
+            <div class="label"><b>Project Name:</b></div>
+            <div class="label"><b>Contact No:</b></div>
+        </div>
+
+        <div class="row">
+            <div class="value" style="text-align:left;">Quiz App</div>
+            <div class="label" style="background-color: rgb(233, 252, 233);">9336158002, 9889935240</div>
+        </div>
+
+        <div class="row">
+            <div class="label"><b>App Name:</b></div>
+            <div class="label"><b>Email Id:</b></div>
+        </div>
+
+        <div class="row">
+            <div class="value" style="text-align:left;">10thIQ</div>
+            <div class="label" style="background-color: rgb(225, 241, 225);">sundram2526@gmail.com</div>
+        </div>
+
+        <div class="center-img">
+            <img src="pic/Copilot_20251129_103830.png" alt="Logo">
+        </div>
+        <div>
+            <h1 class="fading">
+                <center>Description</center>
+            </h1>
+            <br>
+            <b>
+                <center>
+                    <div class="back">
+                        1. Option quizzes is a 4 option quiz that runs purely or data loaded from json files stored on
+                        github and accesed you on github pages.
+                        <br />
+                        2.The android app has 5 pages
+                        <br />
+
+                    </div>
+                    <br>
+                    <div class="t">
+                        (1). App Screenshot :- The page no 1 show the app Screenshot <br><br>
+                    </div>
+                    <img class="im" src="pic/quiz1.jpg">
+                    <img class="im" src="pic/quiz2.jpg">
+                    <img class="im" src="pic/quiz3.jpg">
+                    <img class="im" src="pic/quiz4.jpg">
+                    <img class="im" src="pic/quiz5.jpg"><br><br />
+
+                    <div class="two">
+                        (2) Latest news :- The page no 1 shows the latest news from myjsonfile Url is
+                        <a href=" https://sundarampal.github.io/myjsonfiles/newspaper.json">
+                            https://sundarampal.github.io/myjsonfiles/newspaper.json</a>
+                        We will show the latest exam , admission, jobs related news and updates to our quiz.
+                        The page contence a button which on click transfers the user to the next page subject.
+                        <br /><br>
+                    </div><br>
+
+                    <div class="two">
+                        (3) Subject :- The subject page will show a list of the subjects for which quizzes are awailable
+                        subject data from myjsonfile Url is
+                        <a href="https://sundarampal.github.io/myjsonfiles/subject1_2.json ">https://sundarampal.github.io/myjsonfiles/subject1_2.json
+                        </a>
+                        We will show the subject page in id,name,quizzes url mathematics url .
+                        <br /><br>
+                    </div><br>
+
+                    <div class="two">
+                        (4) Quizzes :- The quizzes page will show a list of the quzzes for which quizzes are awailable
+                        quizzes data from myjsonfile math chapter wise url is
+                        <a href=" https://sundarampal.github.io/myjsonfiles/quizzes_math.json">
+                            https://sundarampal.github.io/myjsonfiles/quizzes_math.json</a>
+                        We will show the quizzes page in id,title,discription,questions url.
+                        <br /><br>
+                    </div><br>
+
+                    <div class="two">
+                        (5). Questions :- The question page will show of the question for which question are awailable
+                        question data from myjsonfile question url is
+                        <a
+                            href="https://sundarampal.github.io/myjsonfiles/math_m2.json">https://sundarampal.github.io/myjsonfiles/math_m1.json</a>
+                        we will show the question page in id , title,questions
+                        <br /><br>
+                    </div><br>
+
+                    <div class="two">
+                        (6). Result:- The result page will show of the result for which result are awailable result data
+                        We will show the result page in score and total .
+
+                    </div><br>
+
+
+                </center>
+            </b>
+        </div>
+    </div>
+
+</body>
+
+</html>
